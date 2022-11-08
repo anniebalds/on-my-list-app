@@ -1,3 +1,5 @@
+<body style="background-color:#432C7A;">
+
 <h1>Personal Project 1</h1>
 <h2>On My List</h2>
 
@@ -17,4 +19,5 @@
         <li>Light/dark mode</li>
     </ul>
 </p>
+</body>
 
