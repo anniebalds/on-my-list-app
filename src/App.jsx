@@ -7,7 +7,8 @@ function App() {
   const [ listItem, setListItem ] = useState(
     {
       title: '',
-      category: ''
+      category: '',
+      complete: false
     }
   )
   const [ allItems, setAllItems ] = useState([])
@@ -17,7 +18,7 @@ function App() {
       const storedItems = JSON.parse(localStorage.getItem('localItems'))
       setAllItems(storedItems)
     }
-  }, [])
+  }, [], handleComplete)
 
 
   function handleChange(e) {
@@ -25,7 +26,8 @@ function App() {
         setListItem(prevFormData => {
           return {
               ...prevFormData,
-              [name]: type === "checkbox" ? checked : value          }
+              [name]: type === "checkbox" ? checked : value,
+            complete: false          }
       })
   }
 
@@ -37,7 +39,8 @@ function App() {
       localStorage.setItem('localItems', JSON.stringify([...allItems, listItem]))
       setListItem({
           title: '',
-          category: ''
+          category: '',
+          category: false
       })
     }
   }
@@ -52,8 +55,14 @@ function App() {
   }
 
   function handleComplete(item) {
-    item.complete = !item.complete
-    console.log(item)
+    let updatedItems = allItems.map(mappedItem => {
+      if (mappedItem.title === item.title) {
+          mappedItem.complete = !mappedItem.complete;
+      }
+      return mappedItem
+    });
+    setAllItems(updatedItems)
+    localStorage.setItem('localItems', JSON.stringify(updatedItems))
   }
   
 
