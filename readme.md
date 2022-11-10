@@ -1,6 +1,6 @@
 # *it's on my list* 📺🎬📚🎤🎷
 ## React, Local Storage
-### Project 1 post-bootcamp
+### [project 1 post-bootcamp]
 
 An app to save recommendations from friends, organised by categories:
     <ul>
