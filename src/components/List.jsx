@@ -18,7 +18,7 @@ const List = ({ title, list, handleDelete, handleComplete }) => {
           </div>
         </div>
         )) : (
-          <p style = {{fontStyle: "italic"}}>empty list</p>
+          <p style = {{color: "#515f42"}}>EMPTY LIST</p>
         )}
       </div>
 

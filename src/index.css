@@ -108,8 +108,6 @@ input[type="radio"] {
 
 .category-input input[type="radio"]:focus + label {
   background-color:rgb(255, 228, 187);
-  border-color: rgb(204, 136, 68);
-  transition: border-color 0.25s;
   transition: background-color 0.25s;
 }
 

@@ -15,7 +15,7 @@
 
 <p>Currently working on:
     <ul>
-        <li>Lining through completed tasks</li>
+        <li>Responsive design</li>
         <li>Light/dark mode</li>
     </ul>
 </p>

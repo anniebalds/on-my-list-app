@@ -9,7 +9,7 @@ const Form = ({ handleSubmit, handleChange, listItem }) => {
         <section className='name-input'>
             <input 
             type='text' 
-            placeholder='Enter the title...'
+            placeholder='Enter the title'
             onChange={handleChange}
             name='title' 
             value={listItem.title}
