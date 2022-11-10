@@ -1,8 +1,8 @@
 <body style="background-color:#432C7A;">
 
 <h1>Personal Project 1</h1>
-<h2>*"it's on my list"*</h2>
-<h3>React</h3>
+*"it's on my list"*
+<h3>React & localstorage</h3>
 
 <p>An app to save recommendations from friends, organised by categories:
     <ul>
