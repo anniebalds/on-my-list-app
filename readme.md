@@ -1,5 +1,5 @@
-# Personal Project 1
-## *it's on my list* 📺🎬📚🎤🎷
+# *it's on my list* 📺🎬📚🎤🎷
+## Project 1 post-bootcamp
 ### React & Local Storage
 
 An app to save recommendations from friends, organised by categories:
