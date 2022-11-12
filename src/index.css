@@ -114,7 +114,7 @@ input[type="radio"] {
 .add-to-list {
   margin: 20px 0;
   font-size: 30px;
-  border: none;
+  border: 2px solid #d09fb9;
   cursor: pointer;
   background-color: #68715f;
   color: whitesmoke;
@@ -125,8 +125,8 @@ input[type="radio"] {
 .add-to-list:hover {
   background-color:#c03e28;
   color: white;
-  transition: border-color 0.25s;
-  transition: background-color 0.25s;
+  border: 2px solid #c03e28;
+  transition: all 0.25s
 }
 
 .list-container {

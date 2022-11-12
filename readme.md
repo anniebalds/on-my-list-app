@@ -11,7 +11,7 @@ An app to save recommendations from friends, organised by categories:
         <li>Music</li>
     </ul>
 
-Recommendations can be marked as completed or deleted and are saved to local storage.
+Recommendations are saved to local storage and can be marked as completed or deleted.
 
 Currently working on:
     <ul>
