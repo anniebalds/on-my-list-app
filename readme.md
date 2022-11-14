@@ -18,5 +18,4 @@ Currently working on:
         <li>Responsive design</li>
         <li>Light/dark mode</li>
         <li>Expanding form</li>
-        <li>Clear lists button</li>
     </ul>
