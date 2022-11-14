@@ -17,5 +17,4 @@ Currently working on:
     <ul>
         <li>Responsive design</li>
         <li>Light/dark mode</li>
-        <li>Expanding form</li>
     </ul>
