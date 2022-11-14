@@ -40,7 +40,7 @@ function App() {
       setListItem({
           title: '',
           category: '',
-          category: false
+          complete: false
       })
     }
   }
