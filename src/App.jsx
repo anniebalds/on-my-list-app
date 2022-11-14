@@ -64,6 +64,14 @@ function App() {
     setAllItems(updatedItems)
     localStorage.setItem('localItems', JSON.stringify(updatedItems))
   }
+
+  function clearList(list) {
+    console.log('clearing list', list)
+    //new allItems must include everything except list
+    let updatedItems = allItems.filter(item => !list.includes(item))
+    setAllItems(updatedItems)
+    localStorage.setItem('localItems', JSON.stringify(updatedItems))
+  }
   
 
   return (
@@ -75,6 +83,7 @@ function App() {
         handleChange={handleChange}
         listItem={listItem}
         setListItem={setListItem}
+        clearList={clearList}
       />
 
       <section className='list-container'>
@@ -83,30 +92,35 @@ function App() {
           list={allItems.filter((item) => item.category == 'tv')}
           handleDelete={handleDelete}
           handleComplete={handleComplete}
+          clearList={clearList}
         />
         <List 
           title='Films'
           list={allItems.filter((item) => item.category == 'film')}
           handleDelete={handleDelete}
           handleComplete={handleComplete}
+          clearList={clearList}
         /> 
         <List 
           title='Books'
           list={allItems.filter((item) => item.category == 'book')}   
           handleDelete={handleDelete}   
-          handleComplete={handleComplete}  
+          handleComplete={handleComplete} 
+          clearList={clearList} 
         />
         <List 
           title='Podcasts'
           list={allItems.filter((item) => item.category == 'podcast')}
           handleDelete={handleDelete}
           handleComplete={handleComplete}
+          clearList={clearList}
         />
         <List 
           title='Music'
           list={allItems.filter((item) => item.category == 'music')}
           handleDelete={handleDelete}
           handleComplete={handleComplete}
+          clearList={clearList}
         />
       </section>
     </div>

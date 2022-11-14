@@ -1,6 +1,6 @@
 import React from 'react'
 
-const List = ({ title, list, handleDelete, handleComplete }) => {
+const List = ({ title, list, handleDelete, handleComplete, clearList }) => {
     
 
 
@@ -21,6 +21,8 @@ const List = ({ title, list, handleDelete, handleComplete }) => {
           <p style = {{color: "#515f42"}}>EMPTY LIST</p>
         )}
       </div>
+
+      <button onClick={() => {clearList(list)}}>CLEAR</button>
 
     </section>
 
