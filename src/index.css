@@ -107,7 +107,7 @@ input[type="radio"] {
 }
 
 .category-input input[type="radio"]:focus + label {
-  background-color:rgb(255, 228, 187);
+  background-color:#f7eda6;
   transition: background-color 0.25s;
 }
 
@@ -188,6 +188,24 @@ input[type="radio"] {
 .is-complete  {
 	text-decoration: line-through;
   opacity: 0.8;
+}
+
+.clear-list-btn {
+  border: 1px solid #f7eda6;
+  border-radius: 5px;
+  font-family: inherit;
+  background-color: #c03e28;
+  color: white;
+  font-size: 14px;
+  margin: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.clear-list-btn:hover {
+  border: 1px solid #c03e28;
+  font-weight: 700;
+  transition: all 0.25s;
 }
 
 
