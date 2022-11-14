@@ -22,7 +22,7 @@ const List = ({ title, list, handleDelete, handleComplete, clearList }) => {
         )}
       </div>
 
-      <button onClick={() => {clearList(list)}} className='clear-list-btn'>CLEAR</button>
+      {list.length > 0 ?<button onClick={() => {clearList(list)}} className='clear-list-btn'>CLEAR</button>: ''}
 
     </section>
 

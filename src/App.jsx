@@ -66,8 +66,6 @@ function App() {
   }
 
   function clearList(list) {
-    console.log('clearing list', list)
-    //new allItems must include everything except list
     let updatedItems = allItems.filter(item => !list.includes(item))
     setAllItems(updatedItems)
     localStorage.setItem('localItems', JSON.stringify(updatedItems))
