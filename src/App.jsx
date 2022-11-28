@@ -104,7 +104,7 @@ function App() {
         clearList={clearList}
       />
 
-      <p className='instructions'>Click on a title to mark it as complete</p>
+      <p className='instructions'>Click on a title to mark it as <span className='line-through'>complete</span></p>
 
       <section className='list-container'>
         <List 

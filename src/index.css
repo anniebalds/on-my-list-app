@@ -213,6 +213,10 @@ input[type="radio"] {
   transition: all 0.25s;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
 
 
 /* navy font color: #213547; */
