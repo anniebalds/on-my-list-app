@@ -94,7 +94,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>it's on my list</h1>
+      <h1>"it's on my list"</h1>
 
       <Form 
         handleSubmit={handleSubmit}
@@ -103,6 +103,8 @@ function App() {
         setListItem={setListItem}
         clearList={clearList}
       />
+
+      <p className='instructions'>Click on a title to mark it as complete</p>
 
       <section className='list-container'>
         <List 
