@@ -23,6 +23,7 @@ function App() {
 
   function handleChange(e) {
         const { name, value, type, checked } = e.target
+
         setListItem(prevFormData => {
           return {
               ...prevFormData,
@@ -34,6 +35,7 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault()
+
     if (listItem.title) {
       setAllItems([...allItems, listItem])
       localStorage.setItem('localItems', JSON.stringify([...allItems, listItem]))
@@ -46,10 +48,10 @@ function App() {
   }
 
   function handleDelete(item){
-    console.log(item)
     const itemsAfterDelete = allItems.filter((allItem) => 
       allItem.title !== item.title
     )
+    
     setAllItems(itemsAfterDelete)
     localStorage.setItem('localItems', JSON.stringify(itemsAfterDelete))
   }
@@ -59,8 +61,10 @@ function App() {
       if (mappedItem.title === item.title) {
           mappedItem.complete = !mappedItem.complete;
       }
+
       return mappedItem
     });
+
     setAllItems(updatedItems)
     localStorage.setItem('localItems', JSON.stringify(updatedItems))
   }
