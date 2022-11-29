@@ -30,6 +30,7 @@ h1 {
   line-height: 1.1;
   font-family: 'Fugaz One', cursive;
   text-decoration: underline;
+  text-shadow: 3px 2px #d09fb9;
 }
 
 form {
@@ -103,12 +104,15 @@ input[type="radio"] {
 
 .category-input input[type="radio"]:hover + label {
   background-color:#f7eda6;
-  transition: background-color 0.25s;
+  transition: all 0.25s;
+  box-shadow: 1px 2px #68715f;
 }
 
 .category-input input[type="radio"]:focus + label {
   background-color:#f7eda6;
   transition: background-color 0.25s;
+  box-shadow: 1px 2px #68715f;
+
 }
 
 .add-to-list {
@@ -126,7 +130,8 @@ input[type="radio"] {
   background-color:#c03e28;
   color: white;
   border: 2px solid #c03e28;
-  transition: all 0.25s
+  transition: all 0.25s;
+  box-shadow: 1px 2px #68715f;
 }
 
 .instructions {
@@ -196,8 +201,8 @@ input[type="radio"] {
 }
 
 .clear-list-btn {
-  border: 1px solid #f7eda6;
   border-radius: 5px;
+  border: none;
   font-family: inherit;
   background-color: #c03e28;
   color: white;
@@ -208,9 +213,9 @@ input[type="radio"] {
 }
 
 .clear-list-btn:hover {
-  border: 1px solid #c03e28;
+  box-shadow: 1px 2px #68715f;
   font-weight: 700;
-  transition: all 0.25s;
+  transition: background-color 0.25s;
 }
 
 .line-through {

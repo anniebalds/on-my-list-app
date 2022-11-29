@@ -94,7 +94,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>"it's on my list"</h1>
+      <h1>"It's on my list"</h1>
 
       <Form 
         handleSubmit={handleSubmit}
