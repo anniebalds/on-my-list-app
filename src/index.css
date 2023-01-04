@@ -106,13 +106,13 @@ input[type="radio"] {
 .category-input input[type="radio"]:hover + label {
   background-color:#f7eda6;
   transition: all 0.25s;
-  box-shadow: 0px 0px 15px  #f7eda6;
+  box-shadow: 0px 0px 15px #f7eda6;
 }
 
 .category-input input[type="radio"]:focus + label {
   background-color:#f7eda6;
   transition: background-color 0.25s;
-  box-shadow: 1px 2px #68715f;
+  box-shadow: 0px 0px 15px #f7eda6;
 
 }
 
