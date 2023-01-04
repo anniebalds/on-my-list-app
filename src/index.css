@@ -18,10 +18,10 @@
 
 body {
   display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+  width: 100%;
   color: #042846;
-  background-color: #f7eda6;
+  /* background-color: #f7eda6; */
+  background-color: #fcfbf2;
   font-family: Roboto Mono;
 }
 
@@ -63,7 +63,8 @@ form {
 
 .name-input input:hover {
   border: 2px solid #f7eda6;
-  background-color: #b37794;
+  color: #f7eda6;
+  background-color: #ac668b;
   transition: border-color 0.25s;
   transition: background-color 0.25s;
 }
@@ -105,7 +106,7 @@ input[type="radio"] {
 .category-input input[type="radio"]:hover + label {
   background-color:#f7eda6;
   transition: all 0.25s;
-  box-shadow: 1px 2px #68715f;
+  box-shadow: 0px 0px 15px  #f7eda6;
 }
 
 .category-input input[type="radio"]:focus + label {
@@ -120,18 +121,18 @@ input[type="radio"] {
   font-size: 30px;
   border: 2px solid #d09fb9;
   cursor: pointer;
-  background-color: #68715f;
+  background-color: #ac668b;
   color: whitesmoke;
   border-radius: 50%;
   margin-top: 1em
 }
 
 .add-to-list:hover {
-  background-color:#c03e28;
   color: white;
-  border: 2px solid #c03e28;
   transition: all 0.25s;
-  box-shadow: 1px 2px #68715f;
+  border: 2px solid #ac668b;
+  box-shadow: 0px 0px 12px #ac668b;
+
 }
 
 .instructions {
@@ -142,11 +143,12 @@ input[type="radio"] {
 .list-container {
   display: flex;
   gap: 2em;
+  width: 90vw
 }
 
 .list-section {
   max-width: 20vw;
-  width: 20vw;
+  width: 80%;
 }
 
 .list-section h2 {
@@ -157,6 +159,7 @@ input[type="radio"] {
 .list {
   min-height: 60vh;
   max-height: 60vh;
+  width: 80%;
   overflow: scroll;
   border-radius: 5px;
   background-color: #6281c3;
@@ -164,6 +167,7 @@ input[type="radio"] {
   font-size: 14px;
   text-align: left;
   padding: 0 1em;
+  background: linear-gradient(#6281c3, #7f848f);
 }
 
 .list-title {
@@ -213,7 +217,8 @@ input[type="radio"] {
 }
 
 .clear-list-btn:hover {
-  box-shadow: 1px 2px #68715f;
+  /* box-shadow: 1px 2px #68715f; */
+  box-shadow: 0px 0px 10px red;
   font-weight: 700;
   transition: background-color 0.25s;
 }
