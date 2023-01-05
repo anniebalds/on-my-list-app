@@ -1,8 +1,6 @@
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,26 +15,21 @@
 }
 
 body {
-  display: flex;
-  width: 100%;
   color: #042846;
-  /* background-color: #f7eda6; */
-  background-color: #fcfbf2;
+  background-color: #f7f6ea;
   font-family: Roboto Mono;
 }
 
 h1 {
-  font-size: 3em;
-  line-height: 1.1;
-  font-family: 'Fugaz One', cursive;
-  text-decoration: underline;
-  text-shadow: 3px 2px #d09fb9;
+  font-size: 3rem;
+  font-family: 'Manrope', cursive;
+  text-align: left;
+  margin-bottom: 1em
 }
 
 form {
-  margin-bottom: 1em;
   background-color: #d09fb9;
-  padding: 20px;
+  padding: 15px 20px;
   border-radius: 5px;
 }
 
@@ -44,15 +37,14 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 3em;
 }
 
 .name-input input {
   width: 30vw;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
-  border-radius: 4px;
+  border-radius: 5px;
   border: 2px solid transparent;
   padding: 0.6em 1.2em;
   cursor: pointer;
@@ -64,15 +56,18 @@ form {
 .name-input input:hover {
   border: 2px solid #f7eda6;
   color: #f7eda6;
-  background-color: #ac668b;
+  background-color: #c28ca8;
   transition: border-color 0.25s;
   transition: background-color 0.25s;
 }
 
-/* .name-input input:focus {
-  border: 2px solid rgb(207, 213, 250);
-  background-color: white;
-} */
+.name-input input:focus {
+  border: 2px solid #f7eda6;
+  color: #f7eda6;
+  background-color: #c28ca8;
+  transition: border-color 0.25s;
+  transition: background-color 0.25s;
+}
 
 ::placeholder {
   text-align: center;
@@ -84,7 +79,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1em;
+  margin: 2em 0em;
   font-weight: bold
 }
 
@@ -105,26 +100,23 @@ input[type="radio"] {
 
 .category-input input[type="radio"]:hover + label {
   background-color:#f7eda6;
-  transition: all 0.25s;
   box-shadow: 0px 0px 15px #f7eda6;
+  transition: all 0.25s;
 }
 
 .category-input input[type="radio"]:focus + label {
   background-color:#f7eda6;
-  transition: background-color 0.25s;
   box-shadow: 0px 0px 15px #f7eda6;
-
+  transition: background-color 0.25s;
 }
 
 .add-to-list {
-  margin: 20px 0;
   font-size: 30px;
   border: 2px solid #d09fb9;
   cursor: pointer;
   background-color: #ac668b;
   color: whitesmoke;
   border-radius: 50%;
-  margin-top: 1em
 }
 
 .add-to-list:hover {
@@ -132,11 +124,10 @@ input[type="radio"] {
   transition: all 0.25s;
   border: 2px solid #ac668b;
   box-shadow: 0px 0px 12px #ac668b;
-
 }
 
 .instructions {
-  margin-top: 2em;
+  margin: 3em 0 2em 0;
   color: #68715f;
 }
 
@@ -153,7 +144,8 @@ input[type="radio"] {
 
 .list-section h2 {
   color: #68715f;
-  font-weight: 400;
+  font-weight: 600;
+  margin-top: 0
 }
 
 .list {
@@ -162,23 +154,16 @@ input[type="radio"] {
   width: 80%;
   overflow: scroll;
   border-radius: 5px;
-  background-color: #6281c3;
   font-weight: bold;
-  font-size: 14px;
   text-align: left;
   padding: 0 1em;
   background: linear-gradient(#6281c3, #7f848f);
-}
-
-.list-title {
-  margin-bottom: 0.5em;
 }
 
 .list-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 
 .item-title {
@@ -186,11 +171,10 @@ input[type="radio"] {
 }
 
 .list-item button {
-  background-color: #6281c3;
+  background-color: transparent;
   border: none;
   color: #042846;
   border-radius: 100%;
-  margin-right: 0;
 }
 
 .list-item button:hover {
@@ -211,13 +195,12 @@ input[type="radio"] {
   background-color: #c03e28;
   color: white;
   font-size: 14px;
-  margin: 10px;
-  padding: 5px 10px;
+  margin: 1.5em 0;
+  padding: 6px 12px;
   cursor: pointer;
 }
 
 .clear-list-btn:hover {
-  /* box-shadow: 1px 2px #68715f; */
   box-shadow: 0px 0px 10px red;
   font-weight: 700;
   transition: background-color 0.25s;
@@ -226,8 +209,3 @@ input[type="radio"] {
 .line-through {
   text-decoration: line-through;
 }
-
-
-
-/* navy font color: #213547; */
-
