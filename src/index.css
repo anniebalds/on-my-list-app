@@ -10,7 +10,6 @@
 
 #root {
   max-width: 1280px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -18,19 +17,24 @@ body {
   color: #042846;
   background-color: #f7f6ea;
   font-family: Roboto Mono;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
   font-size: 3rem;
   font-family: 'Manrope', cursive;
-  text-align: left;
-  margin-bottom: 1em
+  margin-bottom: 1.5em;
 }
 
 form {
   background-color: #d09fb9;
   padding: 15px 20px;
   border-radius: 5px;
+  margin: auto;
+  width: 60%
 }
 
 .form-input {
