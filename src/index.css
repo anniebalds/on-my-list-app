@@ -96,22 +96,23 @@ input[type="radio"] {
 .category-input label {
   display: inline-block;
   background-color: #68715f;
-  padding: 7px 15px;
+  padding: 8px 15px;
   font-size: 18px;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.category-input input[type="radio"]:hover + label {
+.category-input input[type="radio"] + label:hover,
+.category-input input[type="radio"] + label:focus {
   background-color:#f7eda6;
   box-shadow: 0px 0px 15px #f7eda6;
   transition: all 0.25s;
 }
 
-.category-input input[type="radio"]:focus + label {
+.category-input input[type="radio"] + label:active {
   background-color:#f7eda6;
-  box-shadow: 0px 0px 15px #f7eda6;
-  transition: background-color 0.25s;
+  box-shadow: 0px 0px 20px #afa66a;
+  transition: all 0.25s;
 }
 
 .add-to-list {
@@ -128,6 +129,11 @@ input[type="radio"] {
   transition: all 0.25s;
   border: 2px solid #ac668b;
   box-shadow: 0px 0px 12px #ac668b;
+}
+
+.add-to-list:active {
+  transition: all 0.25s;
+  box-shadow: 0px 0px 15px #77425e;
 }
 
 .instructions {
@@ -149,7 +155,7 @@ input[type="radio"] {
 .list-section h2 {
   color: #68715f;
   font-weight: 600;
-  margin-top: 0
+  margin-top: 0;
 }
 
 .list {
@@ -206,6 +212,12 @@ input[type="radio"] {
 
 .clear-list-btn:hover {
   box-shadow: 0px 0px 10px red;
+  font-weight: 700;
+  transition: background-color 0.25s;
+}
+
+.clear-list-btn:active {
+  box-shadow: 0px 0px 15px rgb(141, 1, 1);
   font-weight: 700;
   transition: background-color 0.25s;
 }
