@@ -246,6 +246,11 @@ input[type="radio"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0
+  }
+
+  .add-to-list {
+    margin-top: -1em
   }
 
   .list-container {
@@ -264,6 +269,6 @@ input[type="radio"] {
   }
 
   .list {
-    width: 300%;
+    width: 300%
   }
 }
