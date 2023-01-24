@@ -16,7 +16,7 @@
 body {
   color: #042846;
   background-color: #f7f6ea;
-  font-family: Roboto Mono;
+  font-family: Roboto Mono, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +28,7 @@ body {
 
 h1 {
   font-size: 3rem;
-  font-family: 'Manrope', cursive;
+  font-family: 'Manrope', sans-serif;
   margin-bottom: 1.5em;
 }
 
@@ -226,14 +226,16 @@ input[type="radio"] {
 
 
 @media (max-width: 480px) {
-  p {
-    font-size: 24px;
+  h1 {
+    font-size: 2.4rem;
   }
+
 
   form {
     background-color: #d09fb9;
     border-radius: 5px;
-    margin: auto;
+    margin: 0 auto;
+    margin-bottom: 3em
   }
 
   ::placeholder {
@@ -246,11 +248,23 @@ input[type="radio"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0
+    gap: 0;
+    margin: 1em 0
+  }
+
+  .category-input label {
+    margin: -0.3em
   }
 
   .add-to-list {
     margin-top: -1em
+  }
+
+  .instructions {
+    font-size: 18px;
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 3px solid #adb3a7
   }
 
   .list-container {
@@ -261,14 +275,14 @@ input[type="radio"] {
   }
   
   .list-section {
-    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
+
   .list {
-    width: 300%
+    width: 300%;
   }
 }
