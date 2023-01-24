@@ -106,17 +106,13 @@ input[type="radio"] {
 }
 
 .category-input input[type="radio"] + label:hover,
-.category-input input[type="radio"] + label:focus {
+.category-input input[type="radio"]:focus + label,
+.category-input input[type="radio"]:active + label {
   background-color:#f7eda6;
   box-shadow: 0px 0px 15px #f7eda6;
   transition: all 0.25s;
 }
 
-.category-input input[type="radio"] + label:active {
-  background-color:#f7eda6;
-  box-shadow: 0px 0px 20px #afa66a;
-  transition: all 0.25s;
-}
 
 .add-to-list {
   font-size: 30px;
