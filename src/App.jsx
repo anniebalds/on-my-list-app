@@ -96,6 +96,7 @@ function App() {
 
   return (
     <div className="App">
+    <section className='top-section'>
       <nav>
         <h1>it's on my list</h1>
       </nav>
@@ -106,7 +107,9 @@ function App() {
         setListItem={setListItem}
         clearList={clearList}
       />
+      </section>
 
+      <section className='bottom-section'>
       <p className="instructions">
         Click on a title to mark it as{" "}
         <span className="line-through">complete</span>
@@ -148,6 +151,7 @@ function App() {
           handleComplete={handleComplete}
           clearList={clearList}
         />
+      </section>
       </section>
     </div>
   );
