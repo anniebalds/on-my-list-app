@@ -264,7 +264,9 @@ input[type="radio"] {
     font-size: 18px;
     margin-top: 2em;
     padding-top: 2em;
-    border-top: 3px solid #adb3a7
+    border-top: 15px solid #f7eda6;
+    margin-left: -0.25em;
+    margin-right: -0.25em;
   }
 
   .list-container {
