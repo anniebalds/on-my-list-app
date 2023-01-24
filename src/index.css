@@ -223,3 +223,47 @@ input[type="radio"] {
 .line-through {
   text-decoration: line-through;
 }
+
+
+@media (max-width: 480px) {
+  p {
+    font-size: 24px;
+  }
+
+  form {
+    background-color: #d09fb9;
+    border-radius: 5px;
+    margin: auto;
+  }
+
+  ::placeholder {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .category-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .list-section {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list {
+    width: 300%;
+  }
+}
